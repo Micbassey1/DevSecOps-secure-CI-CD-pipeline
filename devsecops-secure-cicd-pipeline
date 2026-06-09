@@ -1,0 +1,33 @@
+devsecops-secure-cicd-pipeline/
+│
+├── README.md
+│
+├── app/
+│   ├── main.py
+│   ├── requirements.txt
+│   └── Dockerfile
+│
+├── .github/
+│   └── workflows/
+│       └── security-pipeline.yml
+│
+├── semgrep/
+│   └── semgrep-rules.yml
+│
+├── sonar/
+│   └── sonar-project.properties
+│
+├── trivy/
+│   └── trivy-ignore.yaml
+│
+├── kubernetes/
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   └── namespace.yaml
+│
+├── docs/
+│   ├── architecture.md
+│   ├── threat-model.md
+│   └── remediation-guide.md
+│
+└── screenshots/
