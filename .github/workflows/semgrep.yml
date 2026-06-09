@@ -1,0 +1,19 @@
+name: Semgrep Security Scan
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  semgrep:
+    name: Run Semgrep
+
+    runs-on: ubuntu-latest
+
+    container:
+      image: semgrep/semgrep
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - run: semgrep scan --config auto
